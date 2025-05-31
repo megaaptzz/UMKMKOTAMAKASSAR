@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBGIS UMKM Kuliner Kota Makassar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <h1>WEBGIS UMKM Kuliner Kota Makassar</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#informasi">Informasi</a></li>
+                <li><a href="#peta">Peta</a></li>
+                <li><a href="#kontak">Kontak Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="section">
+            <div class="content">
+                <h2>Selamat Datang di WebGIS UMKM Kuliner Kota Makassar</h2>
+                <p>
+                    WebGIS ini diimplementasikan untuk memvisualisasikan distribusi dan kepadatan 
+                    UMKM kuliner di Kota Makassar menggunakan algoritma analisis hotspot. 
+                    Dengan menggunakan peta interaktif, pengguna dapat mengetahui lokasi-lokasi strategis 
+                    UMKM kuliner berdasarkan analisis kepadatan bisnis yang dilakukan.
+                </p>
+                <p>
+                    Tujuan utama dari inisiatif ini adalah untuk memberikan dukungan terhadap perkembangan ekonomi lokal, 
+                    membantu pengambilan keputusan dalam perencanaan bisnis, serta menyediakan data visual yang akurat bagi pengusaha dan masyarakat. 
+                    Kami berharap WebGIS ini dapat memberikan manfaat dalam mendorong kemajuan UMKM kuliner di Kota Makassar.
+                </p>
+                <p>
+                    Gunakan fitur filter untuk menyesuaikan data yang dibutuhkan dan eksplorasi berbagai lokasi UMKM kuliner di Kota Makassar.
+                </p>
+            </div>
+        </section>
+
+        <section id="informasi" class="section">
+            <h2 class="section-title">Informasi</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="dot green"></span>
+                    <p><b>UMKM Rating Tinggi</b></p>
+                    <p>"UMKM Rating Tinggi" mengacu pada Usaha Mikro, Kecil, dan Menengah yang memperoleh penilaian tinggi (rating 4-5) 
+                        dalam sistem evaluasi atau ulasan, menunjukkan kualitas produk, layanan, atau kinerja yang sangat baik.</p>
+                </div>
+                <div class="info-card">
+                    <span class="dot red"></span>
+                    <p><b>UMKM Rating Rendah</b></p>
+                    <p>"UMKM Rating Rendah" merujuk pada UMKM yang mendapatkan penilaian kurang baik dengan rating di bawah 4, 
+                        menunjukkan kualitas produk atau layanan yang perlu ditingkatkan.</p>
+                </div>
+            </div>
+        
+            <h3 class="section-title">Analisis Heatmap</h3>
+            <div class="heatmap-analysis">
+                <p>Heatmap adalah representasi grafis dari data kepadatan, yang menunjukkan intensitas nilai pada area geografis tertentu. Dalam konteks ini, heatmap memvisualisasikan <b>kepadatan lokasi UMKM kuliner di Kota Makassar</b>.</p>
+        
+                <div class="heatmap-zones">
+                    <div class="zone-card">
+                        <span class="zone-highlight yellow"></span>
+                        <h4>Zona dengan Kepadatan Tinggi</h4>
+                        <p>Area di sekitar pusat Kota Makassar menunjukkan kepadatan UMKM yang tinggi. Ini mencerminkan tingginya konsentrasi bisnis kuliner yang memanfaatkan aksesibilitas dan jumlah pelanggan yang besar.</p>
+                    </div>
+                    <div class="zone-card">
+                        <span class="zone-highlight green"></span>
+                        <h4>Zona dengan Kepadatan Sedang</h4>
+                        <p>Area pinggiran kota atau wilayah pemukiman seperti Panakkukang, Antang, dan Tamalanrea menunjukkan potensi pasar yang sedang berkembang dengan persaingan yang lebih moderat.</p>
+                    </div>
+                    <div class="zone-card">
+                        <span class="zone-highlight blue"></span>
+                        <h4>Zona dengan Kepadatan Rendah</h4>
+                        <p>Area pinggiran Kota Makassar memiliki kepadatan UMKM yang rendah. Wilayah ini dapat menjadi target ekspansi atau area dengan potensi pasar baru.</p>
+                    </div>
+                </div>
+        
+                <div class="heatmap-recommendations">
+                    <h4>Rekomendasi Bisnis:</h4>
+                    <ul>
+                        <li><b>UMKM Baru:</b> Fokus pada zona kuning/oranye untuk memanfaatkan potensi pasar yang tinggi, atau zona hijau untuk persaingan yang lebih moderat.</li>
+                        <li><b>Pemerintah:</b> Dorong pengembangan bisnis di zona biru untuk menciptakan keseimbangan aktivitas ekonomi di seluruh kota, dengan insentif atau pelatihan bagi UMKM.</li>
+                        <li><b>Pemantauan Berkala:</b> Gunakan heatmap ini secara berkala untuk memantau perubahan kepadatan UMKM dan mengidentifikasi tren perkembangan bisnis di Kota Makassar.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>        
+        
+        <section id="peta" class="section">
+            <h2>Peta Interaktif</h2>
+            
+            <div id="map"></div>
+        </section>
+
+        <section id="kontak" class="section bg-light">
+            <h2>Kontak Kami</h2>
+            <p>Email: <a href="mailto:webgisumkmkulinermakassar@gmail.com">webgisumkmkulinermakassar@gmail.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WebGIS UMKM Kuliner Kota Makassar. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
